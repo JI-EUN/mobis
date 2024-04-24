@@ -786,9 +786,20 @@ footer .footer-links li a, footer .footer-links li button {
   position: relative;
   padding-top: 41.69%;
   margin-bottom: 16px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 .main-layout ul li:last-child {
   margin-bottom: 24px;
+}
+.main-layout ul li .bg-img {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 .main-layout ul li a {
   display: flex;
@@ -811,13 +822,16 @@ footer .footer-links li a, footer .footer-links li button {
   line-height: 24px;
   margin-bottom: 4px;
 }
-.main-layout ul li:nth-child(1) {
+.main-layout ul li:nth-child(1) .bg-img {
   background: url("/assets/svg/main-bg1.svg") no-repeat 50%;
   background-size: cover;
 }
-.main-layout ul li:nth-child(2) {
+.main-layout ul li:nth-child(2) .bg-img {
   background: url("/assets/svg/main-bg2.svg") no-repeat 50%;
   background-size: cover;
+}
+.main-layout ul li:active .bg-img {
+  scale: 1.1;
 }
 
 .service-info-btn {

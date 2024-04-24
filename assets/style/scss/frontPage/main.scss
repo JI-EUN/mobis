@@ -22,8 +22,19 @@
             position: relative;
             padding-top: 41.69%;
             margin-bottom:16px;
+            border-radius: 8px;
+            overflow: hidden;
             &:last-child{
                 margin-bottom: 24px;
+            }
+            .bg-img{
+                position: absolute;
+                z-index: 0;
+                width: 100%;
+                height: 100%;
+                top:0;
+                -webkit-transition: 0.4s;
+                transition: 0.4s;
             }
             a{
                 display: flex;
@@ -48,8 +59,15 @@
             }
             @for $i from 1 through 2 {
                 &:nth-child(#{$i}) {
-                    background:url('/assets/svg/main-bg#{$i}.svg') no-repeat 50%;
-                    background-size: cover;
+                    .bg-img{
+                        background:url('/assets/svg/main-bg#{$i}.svg') no-repeat 50%;
+                        background-size: cover;
+                    }
+                }
+            }
+            &:active{
+                .bg-img{
+                    scale: 1.1;
                 }
             }
         }
