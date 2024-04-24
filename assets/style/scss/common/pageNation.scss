@@ -1,0 +1,29 @@
+.page-nation{
+    margin-top: 16px;
+    align-items: center;
+    justify-content: center;
+    li{
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 39px;
+            border-radius: 4px;
+            color:#aaaaaa;
+        }
+        &.on{
+            a{
+                color:$black;
+                background-color:#f2f2f2 ;
+            }
+        }
+        &:first-child,
+        &:last-child{
+            background:url('/assets/svg/arrow.svg') no-repeat 50%;
+        }
+        &:last-child{
+            transform: rotate(180deg);
+        }
+    }
+}

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현대모비스 방문자 예약시스템</title>
+    <link rel="stylesheet" href="/assets/style/css/frontstyle.css">
+    <style>
+        .container{
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding-top:40px;
+        }
+        .mt-40{
+            margin-top:40px;
+        }
+        h1{
+            font-size: 26px;
+            line-height: 30px;
+            margin-bottom:10px;
+        }
+        table{
+            width: 100%;
+            border-top:2px solid #000
+        }
+        table th,
+        table td{
+            border-bottom: 1px solid #000;
+            padding:10px;
+            text-align: center;
+        }
+        a{
+            display: block;
+        }
+        .state{
+            display: inline-block;
+            background: #dddddd;
+            color:#ffffff;
+            padding:5px 10px;
+            border-radius: 5px;
+        }
+        .state.ed{
+            background-color: #3f51b5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>사용자 화면</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>화면명</th>
+                <th>경로</th>
+                <th>상황</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>메인화면</td>
+                <td><a href="/pages/user/front.html">/pages/user/front.html</a></td>
+                <td>
+                    <i class="state ed">진행완료</i>
+                </td>
+            </tr>
+            <tr>
+                <td>방문절차_팝업</td>
+                <td><a href="/pages/user/popService.html">/pages/user/popService.html</a></td>
+                <td>
+                    <i class="state ed">진행완료</i>
+                </td>
+            </tr>
+            <tr>
+                <td>방문예약_약관동의</td>
+                <td><a href="">/pages/user/reserve1.html</a></td>
+                <td>
+                    <i class="state ed">진행완료</i>
+                </td>
+            </tr>
+            <tr>
+                <td>방문예약_취소팝업</td>
+                <td>
+                    <a href="">/pages/user/popNext.html</a>
+                </td>
+                <td>
+                    <i class="state ed">진행완료</i>
+                </td>
+            </tr>
+            <tr>
+                <td>방문예약_정보입력</td>
+                <td>
+                    <a href="">/pages/user/reserve2.html</a>
+                </td>
+                <td>
+                    <i class="state ed">진행완료</i>
+                </td>
+            </tr>
+            <tr>
+                <td>방문예약_피방문자 검색 팝업</td>
+                <td>
+                    <a href="">/pages/user/popSearch.html</a>
+                </td>
+                <td>
+                    <i class="state ed">진행완료</i>
+                </td>
+            </tr>
+            <tr>
+                <td>방문예약_차량정보  등록 팝업</td>
+                <td>
+                    <a href="">/pages/user/popCarInfo.html</a>
+                </td>
+                <td>
+                    <i class="state ed">진행완료</i>
+                </td>
+            </tr>
+            <tr>
+                <td>방문예약_반입전산장비등록  팝업</td>
+                <td>
+                    <a href="">/pages/user/popEquipment.html</a>
+                </td>
+                <td>
+                    <i class="state ed">진행완료</i>
+                </td>
+            </tr>
+            <tr>
+                <td>방문예약_악성코드 검사  팝업</td>
+                <td>
+                    <a href="">/pages/user/popCodeCheck.html</a>
+                </td>
+                <td>
+                    <i class="state ed">진행완료</i>
+                </td>
+            </tr>
+            <tr>
+                <td>방문예약_신청완료</td>
+                <td>
+                    <a href="">/pages/user/reserve3.html</a>
+                </td>
+                <td>
+                    <i class="state ed">진행완료</i>
+                </td>
+            </tr>
+            <tr>
+                <td>방문신청 현황조회 </td>
+                <td>
+                    <a href="">/pages/user/reserveSate.html</a>
+                </td>
+                <td>
+                    <i class="state ed">진행완료</i>
+                </td>
+            </tr>
+            <tr>
+                <td>방문신청 현황조회_신청내역 삭제팝업 </td>
+                <td>
+                    <a href="">/pages/user/popstateDeleteType1.html</a>
+                </td>
+                <td>
+                    <i class="state ed">진행완료</i>
+                </td>
+            </tr>
+            <tr>
+                <td>방문신청 현황조회_신청내역 삭제팝업</td>
+                <td>
+                    <a href="">/pages/user/popstateDeleteType2.html</a>
+                </td>
+                <td>
+                    <i class="state ed">진행완료</i>
+                </td>
+            </tr>
+            <tr>
+                <td>보안/안전교육동영상 페이지</td>
+                <td>
+                    <a href="">/pages/user/video.html</a>
+                </td>
+                <td>
+                    <i class="state ed">진행완료</i>
+                </td>
+            </tr>
+            <tr>
+                <td>공지사항_리스트페이지</td>
+                <td>
+                    <a href="">/pages/user/notice.html</a>
+                </td>
+                <td>
+                    <i class="state ed">진행완료</i>
+                </td>
+            </tr>
+            <tr>
+                <td>공지사항_상세페이지</td>
+                <td>
+                    <a href="">/pages/user/noticeView.html</a>
+                </td>
+                <td>
+                    <i class="state ed">진행완료</i>
+                </td>
+            </tr>
+            <tr>
+                <td>FAQ_리스트페이지</td>
+                <td>
+                    <a href="">/pages/user/faq.html</a>
+                </td>
+                <td>
+                    <i class="state ed">진행완료</i>
+                </td>
+            </tr>
+            <tr>
+                <td>FAQ_상세페이지</td>
+                <td>
+                    <a href="">/pages/user/faqView.html</a>
+                </td>
+                <td>
+                    <i class="state ed">진행완료</i>
+                </td>
+            </tr>
+            <tr>
+                <td>게시판_첨부파일 팝업</td>
+                <td>
+                    <a href="">/pages/user/popFile.html</a>
+                </td>
+                <td>
+                    <i class="state ed">진행완료</i>
+                </td>
+            </tr>
+            <tr>
+                <td>이용약관 팝업</td>
+                <td>
+                    <a href="">/pages/user/popTerms.html</a>
+                </td>
+                <td>
+                    <i class="state ed">진행완료</i>
+                </td>
+            </tr>
+            <tr>
+                <td>개인정보처리방침 팝업</td>
+                <td>
+                    <a href="">/pages/user/popPrivacy.html</a>
+                </td>
+                <td>
+                    <i class="state ed">진행완료</i>
+                </td>
+            </tr>
+
+            <tr>
+                <td>각 페이지별 팝업 소스</td>
+                <td>
+                    <a href="/pages/user/popup/popService.html">/pages/user/popup/popService.html</a>
+                    <a href="/pages/user/popup/popCarInfo.html">/pages/user/popup/popCarInfo.html</a>
+                    <a href="/pages/user/popup/popEquipment.html">/pages/user/popup/popEquipment.html</a>
+                    <a href="/pages/user/popup/popFile.html">/pages/user/popup/popFile.html</a>
+                    <a href="/pages/user/popup/popNext.html">/pages/user/popup/popNext.html</a>
+                    <a href="/pages/user/popup/popPrivacy.html">/pages/user/popup/popPrivacy.html</a>
+                    <a href="/pages/user/popup/popSearch.html">/pages/user/popup/popSearch.html</a>
+                    <a href="/pages/user/popup/popstateDeleteType1.html">/pages/user/popup/popstateDeleteType1.html</a>
+                    <a href="/pages/user/popup/popstateDeleteType2.html">/pages/user/popup/popstateDeleteType2.html</a>
+                    <a href="/pages/user/popup/popTerms.html">/pages/user/popup/popTerms.html</a>
+                </td>
+                <td>
+                   js적용때문에 따로 빼놓은 소스로 화면내 소스랑 같습니다. 
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+   <script>
+    const linkUrls = document.querySelectorAll('table td a');
+    linkUrls.forEach((e)=>{
+        const linkUrl = e.innerHTML;
+        e.href = linkUrl;
+    })
+   </script>
+</body>
+</html>

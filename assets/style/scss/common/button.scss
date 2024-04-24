@@ -1,0 +1,40 @@
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding:15px 0;
+    &.gray-line-btn{
+        background: $white;
+        border:1px solid $border-gray !important;
+        color:$black;
+    }
+    &.main-bg-btn{
+        background: $mainColor;
+        color:$white;
+        border-radius: 4px;
+        padding:15px 12px;
+        font-size: $size-sm;
+        line-height: $size-md;
+    }
+    &.main-color-btn{
+        background: #F3F6FB;
+        color:$mainColor;
+    }
+}
+
+
+//
+.btns-wrap{
+    flex-wrap: wrap;
+    .btn{
+        flex: 1 1 30%;
+        margin-right:8px;
+        font-weight: 700;
+        font-size: $size-sm;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+header{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    top:0;
+    background-color: $white;
+    >div{
+        border-bottom:1px solid #EEEEEE;
+        padding:16px;align-items: center;
+        h1{
+                flex-grow: 1;
+            b{
+                font-size: $size-sm;
+                font-weight: 700;
+                line-height: 30px;
+                display: block;
+            }
+            &.text-center{
+                padding-right: 24px;
+                text-align: center;
+            }
+            &.text-right{
+                display: flex;
+                justify-content: flex-end;
+                button{
+                    flex-direction: row;
+                    align-items: center;
+                    font-size: $size-sm;
+                    font-weight: 700;
+                    .icon{
+                        margin-left: 12px;
+                    }
+                }
+            }
+        }
+        .back-btn{
+            width: 24px;
+            height: 24px;
+            background: url('/assets/svg/gnb-arrow.svg');
+        }
+        &.main-header{
+            justify-content: space-between;
+            align-items: center;
+            h1{
+                img{
+                    width: 70px;
+                }
+                b{
+                    margin-left:12px;
+                }
+            }
+
+            .lang-btn{
+                padding:6px 12px;
+                line-height: 18px;
+                border-radius:100px ; 
+            }
+        }
+    }
+}
+
+//heaerfixed 관련 컨텐츠 높이 수정
+.page-content{
+    padding-top:63px;
+    min-height: calc(100dvh - 62px);
+}
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

@@ -1,0 +1,348 @@
+.reserve-agreement{
+    min-height: 100%;
+}
+
+.reserve-step{
+    padding:24px 0;
+    border-bottom:1px solid $border-gray;
+    >div{
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            top:12px;
+            left:50%;
+            margin-left: -35%;
+            width:70%;
+            height: 1px;
+            background-color:$border-gray ;
+        }
+    }
+    ol{
+        justify-content: space-around;
+        position: relative;
+        li{
+            display: flex;
+            align-items:center;
+            flex-direction: column;
+            font-weight: 600;
+            i{
+                padding:0 10px;
+                background-color: $white;
+                b{
+                    background-color: #dddddd;
+                    color:$white;
+                    display: flex;
+                    align-items: center;
+                    justify-content:center;
+                    margin-bottom:12px;
+                    font-style: normal;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;;
+                }
+
+            }
+            span{
+                color:#bbbbbb;
+            }
+        
+            &.on{
+                i{
+                   b{
+                     background-color: $mainColor;
+                   }
+                }
+                span{
+                    color: $mainColor;;
+                }
+            }
+        }
+    }
+}
+
+//약관동의
+.reserve-agreement-form{
+    padding:16px;
+    background-color:#F6F8FC;
+    fieldset{
+        margin-bottom:8px;
+        &.last{
+            border-top:1px solid $border-gray;
+            margin:24px 0 0 0;
+            padding-top:24px;
+        }
+    }
+    .accodion-wrap{
+        .accodion-label{
+            border-radius: 4px;
+            padding:16px 20px;
+            border:1px solid $border-gray;
+            .input-custom-wrap{
+                font-weight: 600;
+                .main-color-font{
+                    padding-right: 8px;;
+                }
+            }
+            .accodion-label-arrow{
+                width: 24px;
+                height: 24px;
+                background: url('/assets/svg/gray-arrow.svg') no-repeat 50%;
+            }
+        }
+        .accodion-content{
+            padding:16px;
+            height: 208px;
+            overflow-y: auto;
+            border:1px solid $border-gray;
+            border-top:none;
+            border-radius:0 0 4px 4px;
+            color:#666;
+            line-height: $size-xl;
+        }
+        &.show{
+            .accodion-label{
+                border-radius: 4px 4px 0 0;
+            }
+        }
+    }
+
+    //전체동의
+    .all-agree-wrap{
+        background-color:$white;
+            padding:16px 20px;
+            border:1px solid $border-gray;
+    }
+    .btns-wrap{
+        margin-top:55px;
+    }
+}
+
+//정보입력
+.reserve-write-form{
+    padding:24px 16px;
+    fieldset{
+        padding:24px 0 40px;
+        &:first-child{
+            margin-top:0;
+        }
+        h2{
+            font-size: $size-md;
+            line-height: $size-lg;
+            padding-bottom:24px;
+            margin-bottom:24px;
+            border-bottom:1px solid #f2f2f2;
+        }
+        >div{
+            margin-top:24px;
+            padding:0;
+        }
+        .gray-line-btn{
+            width: 100%;
+            height: 48px;
+            font-weight: 600;
+        }
+        //피방문자 정보
+        .visit-place{    
+            justify-content: space-between;
+            select{
+                width:48.8%;
+            }
+        }
+        .date-select{
+            justify-content: space-between;
+            input{
+                width:48.8%;
+            }
+        }
+
+        //신청자 정보
+        .select-time{
+            align-items: center;
+            >div{
+                width: 47%;
+                justify-content: space-between;
+                select{
+                 width:48%;
+                }
+            }
+            i{
+                display: flex;
+                width: 5.8%;
+                justify-content: center;
+                &::before{
+                    content: "";
+                    display: block;
+                    border-radius: 5px;
+                    width: 40%;
+                    height: 1.5px;
+                    background-color: #dddddd;
+                }
+            }
+        }
+
+        //찾아갈 사람 검색시 나옴
+        .search-find{
+            padding:16px;
+            border-radius: 4px;
+            background-color: #F6F8FC;
+            >p{
+                margin-bottom:16px;
+                line-height: $size-xl;
+            }
+            >div{
+                align-items: center;
+                justify-content: space-between;
+                b{
+                    font-size: $size-sm;
+                }
+            }
+        }
+
+        //연락처
+        .contact-box{    
+            justify-content: space-between;
+            select,input{
+                width:31%;
+            }
+        }
+
+
+
+        //방문객 정보
+        .visiter-info{
+            >div{
+                margin-top:24px;
+                &:first-child{
+                    margin-top:0;
+                }
+                .gray-line-btn{
+                    margin-top:8px;
+                }
+            }
+        }
+
+        //방문객 추가 버튼
+        .add-btn {
+            margin-top:24px;
+            width: 100%;
+            height: 48px;
+            background: #F3F6FB;
+            color:$mainColor;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+                margin-right:8px;
+            }
+        }
+    }
+
+
+    //하단 버튼
+    .btns-wrap{
+        margin-top:41px;
+    }
+}
+
+
+//신청폼 팝업부분
+.reserve-info-pop{
+    form{
+        strong{
+            font-size: $size-sm;
+            line-height: $size-xxl;
+        }
+        fieldset{
+            .form-custom{
+                margin-top:24px;
+            }
+            .car-model{    
+                justify-content: space-between;
+                select{
+                    width:48.8%;
+                }
+            }
+        }
+
+        .bot-text-box{
+            margin-top: 40px;;
+            color:$font-gray;
+            font-size: 13px;
+            line-height: $size-lg;
+            p{
+                margin-bottom:20px;
+                b{
+                    display: block;
+                }
+            }
+        }
+
+        .btns-wrap{
+            padding:16px 0 0 0;
+            margin-top:40px;
+            .btn{
+                width: 100%;
+            }
+        }
+    }
+
+    //전산장비
+    &.pop-equipment{
+        .add-equipment-box{
+            margin-top:40px;
+            padding-top:16px;
+            border-top:1px solid $border-gray;
+            .delete-btn{
+                margin-top:20px;
+                width: 100%;
+                height: 48px;
+                font-weight: 600;
+            }   
+        }
+        .add-btn {
+            margin-top:20px;
+            width: 100%;
+            height: 48px;
+            background: #F3F6FB;
+            color:$mainColor;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+                margin-right:8px;
+            }
+        }
+    }
+}
+
+
+
+
+
+//신청완료
+.reserve-finish{
+    padding:0 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: calc(100dvh - 229px);
+    .text-cont{
+        padding:64px 0;
+        text-align: center;
+        h2{
+            font-size: $size-lg;
+            line-height:  $size-xxl;
+            margin-bottom:16px;
+            b{
+                display: block;
+            }
+        }
+        p{
+            font-size: $size-sm;
+            line-height: $size-lg;
+        }
+    }
+}

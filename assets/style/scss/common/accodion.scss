@@ -1,0 +1,29 @@
+.accodion-wrap{
+    background-color: $white;
+    .accodion-label{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .accodion-label-arrow{
+            display: block; 
+            width: 20px;
+            height: 20px;
+            background:url('/assets/svg/accodion-arrow.svg');
+            background-size: contain;
+        }
+        
+    }
+    .accodion-content{
+        display: none;
+    }
+    &.show{
+        .accodion-label{
+            .accodion-label-arrow{
+                transform: rotate(180deg);
+            }
+        }
+        .accodion-content{
+            display: block ;
+        }
+    }
+}

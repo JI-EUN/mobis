@@ -1,0 +1,88 @@
+.view-page{
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: space-between;
+    .view-content{
+        padding:40px 16px 0;
+        .view-top-box{
+            padding-bottom:24px;
+            border-bottom:1px solid #f2f2f2;
+            p{
+                margin-bottom:8px;
+                font-size: $size-lg;
+                line-height: 28px;
+                font-weight: 700;
+            }
+            ul{
+                li{
+                    font-size: $size-sm;
+                    line-height: $size-xl;
+                    color: $font-gray;
+                    position: relative;
+                    &:first-child{
+                        padding-right:24px;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            right:12px;
+                            top:4px;
+                            width: 1px;
+                            height: 12px;
+                            background: $font-gray;
+                        }
+                    }
+                }
+            }
+        }
+        .view-text-box{
+            padding-top:24px;
+            font-size: $size-sm;
+            line-height: $size-xxl;
+            min-height:250px;
+            p{
+                font-size: $size-sm;
+                line-height: $size-xxl;
+            }
+        }
+    }
+    .list-btn-wrap{
+        padding: 16px;
+        .btn{
+            width: 100%;
+        }
+    }
+}
+
+
+//상세페이지 첨부파일 팝업
+.pop-file-list{
+    li{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:16px 0;
+        border-top:1px solid $border-gray;
+        line-height: $size-xxl;
+        &:first-child{
+            padding-top:0;
+            border-top:none;
+        }
+        &:last-child{
+            padding-bottom: 0;
+        }
+        a{
+	        flex-grow: 1;
+            display: block;
+            text-decoration: underline;
+        }
+        .file-size{
+            flex-shrink: 0;
+            width: 65px;
+            padding-left:5px;
+            color:$font-gray;
+            text-align: right;
+            word-break: break-all;
+        }
+    }
+}

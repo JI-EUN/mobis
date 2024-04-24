@@ -1,0 +1,27 @@
+.ul-table-wrap{
+    border-top:1px solid #EEEEEE;
+    .ul-table-header{
+        display: grid;
+        justify-items: center;
+        font-weight: 600;
+        background-color: #F9FAFB;
+        border-bottom:1px solid #EEEEEE;;
+        padding:16px 0;
+    }
+    .ul-table-body{
+        li{
+            border-bottom:1px solid #EEEEEE;;
+            .ul-tbody-row{
+                display: grid;
+                justify-items: center;    
+                align-items: center;
+                padding:8px 0;
+                font-size: 12px;
+                line-height: $size-sm;
+                >span{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

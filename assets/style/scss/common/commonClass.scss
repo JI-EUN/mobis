@@ -1,0 +1,32 @@
+.d-flex{
+    display: flex;
+}
+.text-ir{
+    font-size: 0;
+    text-indent: -9999px;
+}
+.main-color-font{
+    color: $mainColor !important;;
+}
+.red-color-font{
+    color:$red !important;
+}
+.gray-color-font{
+    color:$font-gray !important;
+}
+.orange-color-font{
+    color:#F57C00 !important;
+}
+.error-text{
+    display: inline-block;
+    color:$red;
+    font-weight: 600;
+    line-height: $size-md;
+    margin-top:8px
+}
+.font-bold{
+    font-weight: bold;
+}
+.text-underline{
+    text-decoration: underline;
+}

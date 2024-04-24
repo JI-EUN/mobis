@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현대모비스 방문자 예약시스템</title>
+    <link rel="stylesheet" href="/assets/style/css/frontstyle.css">
+<body class="noScroll">
+    <header>
+        <div class="d-flex">
+            <a href="" class="back-btn"></a>
+            <h1 class="text-center">
+                <b>방문예약 현황조회</b>
+            </h1>
+        
+        </div>
+    </header>
+    <div class="page-content reserve-state">
+        <div class="reserve-write-form">
+            <h2>방문자명, 생년월일, 연락처를 입력하신 후<br/> 검색해주세요.</h2>
+            <form action="" class="">
+                <fieldset>
+                    <div class="form-custom form-select">
+                        <label for="write1" class="must">방문자명</label>
+                        <input id="write1" type="text" placeholder="방문 부서명을 입력해주세요." >
+                    </div>
+                    <!-- <div class="form-custom form-select">
+                        <label for="write2" class="must">내외국인 구분</label>
+                        <select name="" id="write2">
+                            <option value="">현대모비스</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                        </select>
+                    </div> -->
+                   <div class="form-custom">
+                        <label for="write2" class="must">생년원일</label>
+                        <input id="write2" type="text" placeholder="EX&#41; 1990-10-10">
+                    </div>
+                    <div class="form-custom">
+                        <label for="write3" class="must">연락처</label>
+                        <div class="d-flex contact-box">
+                            <select name="" id="write3">
+                                <option value="">010</option>
+                            </select>
+                            <input type="text">
+                            <input type="text">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="d-flex btns-wrap">
+                    <button class="btn main-bg-btn">검색</button>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="reserve-search-result">
+            <h3>신청내역 <b>3</b></h3>
+
+            <!--신청내역 1건이상-->
+            <ul class="result-lists">
+                <li class="result-list">
+                    <i class="reserve-state-icon">신청</i>
+                    <p>본사 방문예약</p>
+                    <ul class="list-info">
+                        <li>
+                            <span>신청일</span>
+                            <div>2024.03.19</div>
+                        </li>
+                        <li>
+                            <span>방문장소</span>
+                            <div>본사</div>
+                        </li>
+                        <li>
+                            <span>피방문자</span>
+                            <div>오윤근 (정보보안팀)</div>
+                        </li>
+                        <li>
+                            <span>방문기간</span>
+                            <div>
+                                2024.03.23-2024.03.23 <br/>
+                                (09:30-16:30)
+                            </div>
+                        </li>
+                        <li>
+                            <span>보안 / 안전교육 수강여부</span>
+                            <div>
+                                <b class="red-color-font">교육 수강 필요</b>
+                                <a href="video.html" class="main-color-font link">동영상 시청</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="accodion-wrap show">
+                        <div class="d-flex accodion-label">
+                           상세보기
+                           <i class="accodion-label-arrow"></i>
+                        </div>
+                        <div class="accodion-content">
+                            <ul class="list-info">
+                                <li>
+                                    <span>차량정보</span>
+                                    <div>2024.03.19</div>
+                                </li>
+                                <li>
+                                    <span>반입정보자산</span>
+                                    <div>2024.03.19</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <button class="btn gray-line-btn delete-btn popup-btn" data-id="popstateDeleteType1">삭제</button>
+                </li>
+                <li class="result-list">
+                    <i class="reserve-state-icon approval">승인</i>
+                    <p>본사 방문예약</p>
+                    <ul class="list-info">
+                        <li>
+                            <span>신청일</span>
+                            <div>2024.03.19</div>
+                        </li>
+                        <li>
+                            <span>방문장소</span>
+                            <div>본사</div>
+                        </li>
+                        <li>
+                            <span>피방문자</span>
+                            <div>오윤근 (정보보안팀)</div>
+                        </li>
+                        <li>
+                            <span>방문기간</span>
+                            <div>
+                                2024.03.23-2024.03.23 <br/>
+                                (09:30-16:30)
+                            </div>
+                        </li>
+                        <li>
+                            <span>보안 / 안전교육 수강여부</span>
+                            <div>
+                                <a href="video.html" class="main-color-font link">완료</a>
+                                <b class="main-color-font">(유효기간 2024.03.22)</b>
+                                <i>*완료 클릭 시 재수강 가능</i>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="accodion-wrap">
+                        <div class="d-flex accodion-label">
+                           상세보기
+                           <i class="accodion-label-arrow"></i>
+                        </div>
+                        <div class="accodion-content">
+                            <ul class="list-info">
+                                <li>
+                                    <span>차량정보</span>
+                                    <div>2024.03.19</div>
+                                </li>
+                                <li>
+                                    <span>반입정보자산</span>
+                                    <div>2024.03.19</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <button class="btn gray-line-btn delete-btn popup-btn" data-id="popstateDeleteType2">삭제</button>
+                </li>
+                <li class="result-list">
+                    <i class="reserve-state-icon refusal">거절</i>
+                    <p>본사 방문예약</p>
+                    <ul class="list-info">
+                        <li>
+                            <span>신청일</span>
+                            <div>2024.03.19</div>
+                        </li>
+                        <li>
+                            <span>방문장소</span>
+                            <div>본사</div>
+                        </li>
+                        <li>
+                            <span>피방문자</span>
+                            <div>오윤근 (정보보안팀)</div>
+                        </li>
+                        <li>
+                            <span>방문기간</span>
+                            <div>
+                                2024.03.23-2024.03.23 <br/>
+                                (09:30-16:30)
+                            </div>
+                        </li>
+                        <li>
+                            <span>보안 / 안전교육 수강여부</span>
+                            <div>
+                                <b class="red-color-font">교육 수강 필요</b>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="accodion-wrap ">
+                        <div class="d-flex accodion-label">
+                           상세보기
+                           <i class="accodion-label-arrow"></i>
+                        </div>
+                        <div class="accodion-content">
+                            <ul class="list-info">
+                                <li>
+                                    <span>차량정보</span>
+                                    <div>2024.03.19</div>
+                                </li>
+                                <li>
+                                    <span>반입정보자산</span>
+                                    <div>2024.03.19</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <button class="btn gray-line-btn delete-btn popup-btn" data-id="popstateDeleteType2">삭제</button>
+                </li>
+            </ul>
+
+            <!--신청내역 1건이상-->
+
+            <!--신청내역 0건일때-->
+            <div class="no-search-list-wrap">
+                <div class="no-search-list">
+                    <i class="icon icon-no-list"></i>
+                    <p><b>방문신청 내역이 없습니다.</b></p>
+                </div>
+            </div>
+            <!--//신청내역 0건일때-->
+        </div>
+    </div>
+
+   
+    <div class="popup-wrap active">
+        <div class="d-flex box-center">
+            <div class="popup-content-wrap notice-info-popup">
+                <div class="popup-content">
+                    <strong>신청내역 삭제</strong>
+                    <div class="text-cont">
+                        <p>여러 명이 한 건으로 방문 신청하신 경우, 신청건 기준 전체 삭제가 됩니다. 삭제하시겠습니까?</p>
+                        <span class="gray-color-font small-font">
+                            방문자 중 일부가 실제 방문하지 않을 경우<br/> 삭제하지 않고 그대로 두시면 됩니다. 
+                        </span>
+                    </div>
+                </div>
+                <div class="d-flex btns-wrap">
+                    <button class="popup-close gray-color-font btn">취소</button>
+                    <button class="red-color-font btn">삭제</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul class="d-flex footer-links">
+            <li><a href="/pages/user/notice.html">공지사항</a></li>
+            <li><a href="/pages/user/faq.html">FAQ</a></li>
+            <li><button class="popup-btn" data-id="popTerms">이용약관</button></li>
+            <li><button class="popup-btn" data-id="popPrivacy">개인정보처리방침</button></li>
+        </ul>
+    </footer>
+</body>
+</html>
+
+
+

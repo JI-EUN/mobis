@@ -1,0 +1,158 @@
+.popup-wrap{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    top:0;
+    display: none;
+    &.active{
+        display: flex;
+    }
+    >div{
+        
+        display: flex;
+        width: 100%;
+        &.box-bottom{
+            align-items: flex-end;
+            .popup-content-wrap{
+                border-radius: 24px 24px 0 0;
+                .popup-header{
+                    height: 76px;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding:0 20px;
+                    p{
+                        font-size: $size-lg;
+                        line-height: $size-xxl;
+                        font-weight: 700;
+                    }
+                }
+                .popup-content{
+                    padding:8px 16px 24px;
+                    max-height: 80vh;
+                    overflow-y: auto;
+                }
+                .btns-wrap{
+                    .btn{
+                        padding: 15px 12px;
+                    }
+                }
+            }
+        }
+        &.box-center{
+            align-items: center;
+            justify-content: center;
+            .notice-info-popup{
+                border-radius: 16px;
+                width: 87.2%;
+                max-width: 400px;
+                .popup-content{
+                    padding:24px 16px;
+                    text-align: center;
+                    min-height: 48px;
+                    strong{
+                        display: block;
+                        font-size: $size-sm;
+                        line-height: $size-xxl;
+                        font-weight: 700;
+                        margin-bottom:8px;
+                    }
+                    >p{
+                        font-size: $size-sm;
+                        line-height: $size-xxl;
+                    }
+                    .text-cont{
+                        >p,
+                        >span{
+                            display: block;
+                        }
+                        >p{
+                            font-size: $size-sm;
+                            line-height: $size-xxl;
+                            margin-bottom: 8px;
+                        }
+                        .small-font{
+                            line-height: $size-md;
+                        }
+                    }
+                    
+                }
+
+                .btns-wrap{
+                    width: 100%;
+                    border-top:1px solid $border-gray;
+                    .btn{
+                        display: flex;
+                        flex: 1 1 30%;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 56px;
+                        border-left:1px solid $border-gray;
+                        &:first-child{
+                            border-left:none;
+                        }
+                    }
+                    &.type-buble{
+                        padding:16px;
+                        border:none;
+                        .btn{
+                            border:none;
+                            height: 48px;
+                        }
+                    }
+                }
+            }
+        }
+        &.box-full{
+            .popup-header{
+                height: 63px;
+                padding:16px;
+                align-items: center;
+                border-bottom:1px solid $border-gray;
+                p{
+                  font-size:$size-sm;  
+                  font-weight: 700;
+                  padding-right:24px;
+                  text-align: center;
+                  flex-grow: 1;
+                }
+            }
+            .popup-content{
+                padding:40px 16px ; 
+                .title-box{
+                    padding-bottom:24px;
+                    margin-bottom:24px;
+                    border-bottom:1px solid #f2f2f2;
+                    h2{
+                        font-size: $size-lg;
+                        line-height: 28px;
+                    }
+                    .privacy-history{
+                        margin-top:24px;
+                        >p{
+                            line-height: $size-md;
+                            margin-bottom:8px;
+                        }
+                    }
+                }
+                .text-box{
+                    height: calc(100vh - 200px);
+                    overflow-y: auto;
+                    &.small{
+                     height: calc(100vh - 300px);
+                    }
+                }
+            }
+        }
+    }
+
+
+    .popup-content-wrap{
+        background-color: $white;
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,21 @@
+.flex-table-wrap{
+    border:1px solid $border-gray;
+    border-width: 1px 0 1px 0 ;
+    padding:12px 0;
+    li{
+        display: flex;
+        margin-bottom: 8px;
+        justify-content: flex-start;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        >b{
+            width: 37.3%;
+            font-weight: normal;
+            flex-shrink: 0;
+        }
+        >div{
+	        flex-grow: 1;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.add-file-popup{
+    .file-lists{
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:16px 0;
+            border-bottom:1px solid $border-gray;
+            &:last-child{
+                border-bottom:none;
+            }
+            a{
+                border-bottom:1px solid $black;
+                display: block;
+                max-width: 80%;
+            }
+            span{
+                color:#666666;
+                flex-grow: 1;
+                text-align: right;
+            }
+        }
+    }   
+}

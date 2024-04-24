@@ -1,0 +1,35 @@
+.icon{
+    font-size:0;
+    text-indent: -99999px;
+    display: block;
+    &.file-icon{
+        width: 20px;
+        height: 20px;
+        background: url('/assets/svg/file-icon.svg') no-repeat 50%;
+    }
+    &.close-icon{
+        width: 24px;
+        height: 24px;
+        background: url('/assets/svg/close-icon.svg') no-repeat 50%;
+    }
+    &.icon-addvisitor{
+        width: 16px;
+        height: 16px;
+        background: url('/assets/svg/userplus.svg') no-repeat 50%;
+    }
+    &.white-arrow-icon{
+        width:24px;
+        height: 24px;
+        background: url('/assets/svg/white-arrow.svg') no-repeat 50%;
+    }
+    &.icon-plus{
+        width:20px;
+        height: 20px;
+        background: url('/assets/svg/icon-plus.svg') no-repeat 50%;
+    }
+    &.icon-profile{
+        width: 30px;
+        height: 30px;
+        background: url('/assets/svg/profile.svg') no-repeat 50%;
+    }
+}

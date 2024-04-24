@@ -1,0 +1,22 @@
+.tab-wrap{
+    display: flex;
+    width: 100%;
+    padding:4px;
+    border-radius: 2px;
+    background-color: #F2F2F2;
+    a{
+        display: block;
+        width: 50%;
+        background-color: none;
+        color:#666666;
+        font-weight: 600;
+        border-radius: 2px;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        &.active{
+            background-color: $white;
+            color:$black;
+        }
+    }
+}

@@ -1,0 +1,105 @@
+<div class="d-flex box-bottom">
+    <div class="popup-content-wrap">
+        <div class="popup-header d-flex">
+            <p>반입전산장비 등록 </p>
+            <button class="btn popup-close" ><i class="icon close-icon">닫기</i></button>
+        </div>
+        <div class="popup-content pop-equipment reserve-info-pop">
+            <form action="">
+                <strong>반입전산장비 정보를 정확히 입력하세요.</strong>
+                <fieldset>
+                    <div>
+                        <div class="form-custom form-select">
+                            <label for="equipment1" class="must">자산구분</label>
+                            <div class="d-flex">
+                                <select name="" id="equipment1">
+                                    <option value="">구분</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div> 
+                        <div class="form-custom">
+                            <label for="equipment2" class="must">품명(모델명)</label>
+                            <input id="equipment2" type="text" placeholder="품명을 입력하세요.">
+                        </div>
+                        <div class="form-custom">
+                            <label for="equipment4" class="must">제품 / 실리얼번호</label>
+                            <input id="equipment4" type="text" placeholder="EX&#41; SN.1234-5678">
+                        </div>
+                    </div>
+                    <!--물품 추가되는 박스영역-->
+                    <div class="add-equipment-box">
+                        <div class="form-custom form-select">
+                            <label for="equipment1" class="must">자산구분</label>
+                            <div class="d-flex">
+                                <select name="" id="equipment1">
+                                    <option value="">구분</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div> 
+                        <div class="form-custom">
+                            <label for="equipment2" class="must">품명(모델명)</label>
+                            <input id="equipment2" type="text" placeholder="품명을 입력하세요.">
+                        </div>
+                        <div class="form-custom">
+                            <label for="equipment4" class="must">제품 / 실리얼번호</label>
+                            <input id="equipment4" type="text" placeholder="EX&#41; SN.1234-5678">
+                        </div>
+
+                       <button class="btn gray-line-btn red-color-font delete-btn">삭제</button>
+                    </div>
+                    <!--//물품 추가되는 박스영역-->
+
+                    <!--추가버튼-->
+                    <button class="add-btn btn"><i class="icon icon-plus">추가아이콘</i> 물품 추가</button>
+                    <!--//추가버튼-->
+ 
+ 
+                    <div class="bot-text-box">
+                        <p>
+                            비정보자산(전산장비 제외) 당일 반/출입 물품은 방문센터 內 비치된 비정보자산 반출입 신청서 작성 후 출입 가능합니다.
+                        </p>    
+
+                        <p>
+                            <b>반입 전산장비 등록 유의사항</b>
+                            전산장비 품명 및 S/N(시리얼번호)를 정확히 기재 바랍니다.
+                            (단, S/N를 확인할 수 없는 경우 제조사 및 크기/용량/색상 기재)
+                        </p>
+                        <b>예시)</b>
+                        <ul class="dot-list">
+                            <li>전산장비구분: 노트북</li> 
+                            <li>품명(모델명): LG 15ZD960</li> 
+                            <li>제품/시리얼번호 : 15inch / BLACK</li>
+                        </ul>
+                    </div>
+                </fieldset>
+                <div class="btns-wrap">
+                    <button class="btn main-bg-btn" type="button">저장</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!--반입장비검사 -->
+<div class="d-flex box-center">
+    <div class="popup-content-wrap notice-info-popup">
+        <div class="popup-content">
+            <strong>악성코드 검사 실시</strong>
+            <div class="text-cont">
+                <p>전산장비(노트북/USB) 반입 시<br/>악성코드 검사를 실시합니다.(약 10분 소요)</p>
+                <span class="gray-color-font small-font">
+                    검사 미완료 전산장비의 사업장 반입 적발 시<br/>보안 규정 위반으로 조치 예정입니다.
+                </span>
+            </div>
+        </div>
+        <div class="d-flex btns-wrap">
+            <button class="main-color-font btn popup-close">확인</button>
+        </div>
+    </div>
+</div>
+<!--//반입장비 -->

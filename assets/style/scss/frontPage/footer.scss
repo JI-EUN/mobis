@@ -1,0 +1,30 @@
+footer{
+    .footer-links{
+        height: 62px;
+        align-items: center;
+        justify-content: center;
+        li{
+            padding-left:32px;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 9px;
+                left:16px;
+                top:4px;
+                background-color: #aaaaaa;
+            }
+            &:first-child{
+                padding-left: 0;
+                &::before{
+                    display:none;
+                }
+            }
+            a,button{
+                font-size: 12px;
+                line-height: 14.32px;
+            }
+        }
+    }
+}

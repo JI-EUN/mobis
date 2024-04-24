@@ -1,0 +1,98 @@
+.main-layout{
+    padding-left: 16px;
+    padding-right: 16px;
+    .main-title{
+        padding-top:46px;
+        margin-bottom:40px;
+        span{
+            color: #A0A9C0;
+            font-weight: 600;
+            line-height: $size-md;
+            display: block;
+            margin-bottom: 8px;
+        }
+        p{
+            font-size: $size-xl;
+            line-height: 28px;
+            font-weight: 700;
+        }
+    }
+    ul{
+        li{
+            position: relative;
+            padding-top: 41.69%;
+            margin-bottom:16px;
+            &:last-child{
+                margin-bottom: 24px;
+            }
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-radius: 8px;
+                overflow: hidden;
+                color:$white;
+                position: absolute;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                top:0;
+                left:0;
+                padding:0 16px;
+                b{
+                    display: block;
+                    font-size: $size-md;
+                    line-height: $size-xxl;
+                    margin-bottom:4px;
+                }
+            }
+            @for $i from 1 through 2 {
+                &:nth-child(#{$i}) {
+                    background:url('/assets/svg/main-bg#{$i}.svg') no-repeat 50%;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+}
+
+.service-info-btn{
+    line-height: $size-md;
+    font-weight: 600;
+    align-items: center;
+    .blue-arrow-icon{
+        margin-left: 4px;
+        width: 16px;
+        height: 16px;
+        background: url('/assets/svg/blue-arrow.svg') no-repeat 50%;
+    }
+}
+//방문절차 팝업
+.service-info-popup{
+    ol{
+        li{
+            display: flex;
+            align-items:center;
+            font-weight: 600;
+            margin-top:20px;
+            &:first-child{
+                margin-top:0;
+            }
+            i{
+                display: flex;
+                align-items: center;
+                justify-content:center;
+                width: 32px;
+                height: 32px;
+                background-color: $main-gray;
+                border-radius: 50%;
+                margin-right: 16px;
+                font-style: normal;
+            }
+            span{
+                display: block;
+                font-size: $size-sm;
+            }
+        }
+    }
+}

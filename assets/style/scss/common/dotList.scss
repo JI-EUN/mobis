@@ -1,0 +1,20 @@
+.dot-list{
+    li{
+        position: relative;
+        padding-left:17px;
+        text-align: left;
+        color: $font-gray;
+        font-size: 13px;
+        line-height: $size-lg;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: $font-gray;
+            left: 4px;
+            top: 8px;
+        }
+    }
+}

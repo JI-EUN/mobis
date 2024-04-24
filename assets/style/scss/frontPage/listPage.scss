@@ -1,0 +1,25 @@
+.list-page{
+    h2{
+        font-size: $size-xxl;
+        padding:40px 16px 24px;
+    }
+    .lists-wrap{
+        padding:0 16px;
+        li{
+            border-top:1px solid #f2f2f2;
+            a{
+                display: block;
+                padding:16px 0 24px;
+                >p{
+                    font-size: $size-sm;
+                    font-weight: 600;
+                    line-height: 22px;
+                    margin-bottom: 8px;
+                }
+                span{
+                    color:$font-gray;
+                }
+            }
+        } 
+    }
+}

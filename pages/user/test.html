@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>test</title>
+        
+    </head>
+
+    <body>
+        <header id="header"></header>
+
+        <button class="button">bbb</button>
+
+        <div id="here"></div>
+    </body>
+
+    <script type="text/javascript">
+         //document.getElementById("header").innerHTML='<object type="text/html" data="hello-world.html"></object>';
+        
+          const btn = document.querySelector('.button');
+
+         btn.addEventListener('click',function(){        
+            fetch('hello-world.html')
+            .then(function(response){
+            response.text().then(function(html){
+                var html_dom = new DOMParser().parseFromString(html,'text/html');
+                html_dom = html_dom.body.firstChild;
+                var body = document.querySelector('body');
+                body.insertAdjacentElement('beforeend',html_dom);                                
+            })
+            });
+        });
+    
+    </script>
+</html>
