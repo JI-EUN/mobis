@@ -1,3 +1,9 @@
 .cache/
 dist/
 node_modules/
+
+/pages/admin/
+/assets/style/css/adminStyle.css
+/assets/style/css/adminStyle.css.map
+/assets/style/scss/adminPage/
+/assets/style/scss/adminCompile.scss

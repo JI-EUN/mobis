@@ -15,6 +15,10 @@
         .mt-40{
             margin-top:40px;
         }
+        .d-flex{
+            justify-content: space-between;
+            align-items: center;
+        }
         h1{
             font-size: 26px;
             line-height: 30px;
@@ -49,7 +53,10 @@
 </head>
 <body>
     <div class="container">
-    <h1>사용자 화면</h1>
+    <div class="d-flex">
+        <h1>사용자 화면</h1>
+        <a href="adminPageList.html">어드민리스트 보러가기</a>
+    </div>
     <table>
         <colgroup>
             <col style="width: 30%;">
@@ -269,6 +276,8 @@
         </tbody>
     </table>
 
+    <br/><br/><br/><br/><br/><br/><br/>
+    
    <script>
     const linkUrls = document.querySelectorAll('table td a');
     linkUrls.forEach((e)=>{
