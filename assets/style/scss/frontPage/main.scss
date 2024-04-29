@@ -55,6 +55,10 @@
                     font-size: $size-md;
                     line-height: $size-xxl;
                     margin-bottom:4px;
+                    color:$white;
+                }
+                span{
+                    color:$white;
                 }
             }
             @for $i from 1 through 2 {

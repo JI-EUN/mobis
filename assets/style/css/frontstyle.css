@@ -822,6 +822,10 @@ footer .footer-links li a, footer .footer-links li button {
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 4px;
+  color: #ffffff;
+}
+.main-layout ul li a span {
+  color: #ffffff;
 }
 .main-layout ul li:nth-child(1) .bg-img {
   background: url("/assets/svg/main-bg1.svg") no-repeat 50%;
