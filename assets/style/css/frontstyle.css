@@ -167,7 +167,7 @@ legend {
 }
 
 .text-underline {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 .icon {
@@ -314,6 +314,10 @@ select {
   padding-right: 32px;
   background: url("/assets/svg/select-dropdown.svg") no-repeat right 9px bottom 50%;
 }
+select:disabled {
+  background-color: #F8F8F8;
+  color: #888888;
+}
 
 input[type=date] {
   position: relative;
@@ -337,6 +341,12 @@ input[type=date]::before {
 }
 input[type=date]:valid::before {
   display: none;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
 }
 
 .filebox .file-list-box {

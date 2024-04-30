@@ -6,7 +6,12 @@
         font-weight: 600;
         background-color: #F9FAFB;
         border-bottom:1px solid #EEEEEE;;
-        padding:16px 0;
+        grid-auto-rows: minmax(48px, auto);
+        align-items: center;
+        li{
+            padding:2px;
+            word-break: break-word;
+        }
     }
     .ul-table-body{
         li{
@@ -20,6 +25,8 @@
                 line-height: $size-sm;
                 >span{
                     text-align: center;
+                    padding:0 2px;
+                    word-break: break-word;
                 }
             }
         }
