@@ -375,6 +375,11 @@ input[type=date]:valid::before {
   width: 100%;
 }
 
+.filebox .filebox-title {
+  line-height: 18px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
 .filebox .file-list-box {
   display: flex;
   align-items: center;

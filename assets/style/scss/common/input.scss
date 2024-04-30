@@ -140,6 +140,11 @@ input[type='date'] {
 
 //file
 .filebox{
+    .filebox-title{
+        line-height: $size-md;
+        display: inline-block;
+        margin-bottom: 8px;
+    }
     .file-list-box{
         display: flex;
         align-items: center;
