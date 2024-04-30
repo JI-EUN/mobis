@@ -323,6 +323,11 @@ input[type=date] {
   position: relative;
   width: 100%;
   background: url("/assets/svg/calendar.svg") no-repeat right 10px center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
 }
 input[type=date]::-webkit-calendar-picker-indicator {
   position: absolute;

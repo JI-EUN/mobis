@@ -91,7 +91,11 @@ input[type='date'] {
   position: relative; // 캘린더 아이콘을 클릭해야만 달력이 보이기 때문에 이 영역 자체를 제어하기 위해 설정 
   width: 100%;
   background: url('/assets/svg/calendar.svg') no-repeat right 10px center; // 배경에 커스텀 아이콘을 넣어주자! x축은 오른쪽에서부터 10px 떨어지게 하고, y축은 가운데 정렬하고, width 35px에 height auto라는 크기를 부여한다.
-
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
     &::-webkit-calendar-picker-indicator {
         position: absolute; // 이를 설정하기 위해 사전에 relative를 설정한 것이다.
         left: 0;
