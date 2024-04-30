@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현대모비스 방문자 예약시스템</title>
+    <link rel="stylesheet" href="/assets/style/css/frontstyle.css">
+    <style>
+        .container{
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding-top:40px;
+        }
+        .mt-40{
+            margin-top:40px;
+        }
+        .d-flex{
+            justify-content: space-between;
+            align-items: center;
+        }
+        h1{
+            font-size: 26px;
+            line-height: 30px;
+            margin-bottom:10px;
+        }
+        table{
+            width: 100%;
+            table-layout: fixed;
+            border-top:2px solid #000
+        }
+        table th,
+        table td{
+            border-bottom: 1px solid #000;
+            padding:10px;
+            text-align: center;
+        }
+        a{
+            display: block;
+            word-break: break-word;
+        }
+        .state{
+            display: inline-block;
+            background: #dddddd;
+            color:#ffffff;
+            padding:5px 10px;
+            border-radius: 5px;
+        }
+        .state.ed{
+            background-color: #3f51b5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="d-flex">
+        <h1>어드민 화면</h1>
+        <a href="index.html">사용자화면리스트 보러가기</a>
+    </div>
+    <table>
+        <colgroup>
+            <col style="width: 30%;">
+            <col style="width:auto">
+            <col style="width: 30%">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>화면명</th>
+                <th>경로</th>
+                <th>상황</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>로그인화면</td>
+                <td><a href="/pages/admin/login.html">/pages/admin/login.html</a></td>
+                <td><i class="state ed">진행완료</i></td>
+            </tr>
+            <tr>
+                <td>로그아웃 팝업창</td>
+                <td><a href="/pages/admin/popLogout.html">/pages/admin/popLogout.html</a></td>
+                <td><i class="state ed">진행완료</i></td>
+            </tr>
+            <tr>
+                <td>메인화면_방문예약조회 리스트</td>
+                <td><a href="/pages/admin/main.html">/pages/admin/main.html</a></td>
+                <td><i class="state ed">진행완료</i></td>
+            </tr>
+            <tr>
+                <td>메인화면_방문예약조회 상세페이지</td>
+                <td><a href="/pages/admin/reserveInfoView.html">/pages/admin/reserveInfoView.html</a></td>
+                <td><i class="state ed">진행완료</i></td>
+            </tr>
+            <tr>
+                <td>방문예약조회_파일첨부관련 팝업</td>
+                <td><a href="/pages/admin/PopFile.html">/pages/admin/PopFile.html</a></td>
+                <td><i class="state ed">진행완료</i></td>
+            </tr>
+            <tr>
+                <td>방문예약조회_반려사유 팝업(작성)</td>
+                <td><a href="/pages/admin/popReject.html">/pages/admin/popReject.html</a></td>
+                <td><i class="state ed">진행완료</i></td>
+            </tr>
+            <tr>
+                <td>방문예약조회_반려사유 팝업(보기)</td>
+                <td><a href="/pages/admin/popReject2.html">/pages/admin/popReject2.html</a></td>
+                <td><i class="state ed">진행완료</i></td>
+            </tr> 
+            <tr>
+                <td>방문예약조회_전상장비 반출처리 팝업</td>
+                <td><a href="/pages/admin/popDetail.html">/pages/admin/popDetail.html</a></td>
+                <td><i class="state ed">진행완료</i></td>
+            </tr>
+            <tr>
+                <td>전산장비 반출처리 리스트페이지</td>
+                <td><a href="/pages/admin/outList.html">/pages/admin/outList.html</a></td>
+                <td><i class="state ed">진행완료</i></td>
+            </tr> 
+            <tr>
+                <td>전산장비 반출처리 상세페이지</td>
+                <td><a href="/pages/admin/reserveInfoView2.html">/pages/admin/reserveInfoView2.html</a></td>
+                <td><i class="state ed">진행완료</i></td>
+            </tr> 
+            <tr>
+                <td>전산장비 반출처리 _ 반출요청 팝업</td>
+                <td><a href="/pages/admin/popOutRequest.html">/pages/admin/popOutRequest.html</a></td>
+                <td><i class="state ed">진행완료</i></td>
+            </tr> 
+            <tr>
+                <td>에러페이지</td>
+                <td><a href="/pages/admin/error.html">/pages/admin/error.html</a></td>
+                <td><i class="state ed">진행완료</i></td>
+            </tr> 
+            <tr>
+                <td>사이트 접속안내 </td>
+                <td><a href="/pages/admin/loginInfo.html">/pages/admin/loginInfo.html</a></td>
+                <td><i class="state ed">진행완료</i></td>
+            </tr> 
+            <tr>
+                <td>각 페이지별 팝업 소스</td>
+                <td>
+                    <a href="/pages/admin/popup/popDetail.html">/pages/user/popup/popDetail.html</a>
+                    <a href="/pages/admin/popup/popLogout.html">/pages/user/popup/popLogout.html</a>
+                    <a href="/pages/admin/popup/popOutRequest.html">/pages/user/popup/popOutRequest.html</a>
+                    <a href="/pages/admin/popup/popReject.html">/pages/user/popup/popReject.html</a>
+                    <a href="/pages/admin/popup/popReject2.html">/pages/user/popup/popReject2.html</a>
+                </td>
+                <td>
+                   js적용때문에 따로 빼놓은 소스로 화면내 소스랑 같습니다. 
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br/><br/><br/><br/><br/><br/><br/>
+    
+   <script>
+    const linkUrls = document.querySelectorAll('table td a');
+    linkUrls.forEach((e)=>{
+        const linkUrl = e.innerHTML;
+        e.href = linkUrl;
+    })
+   </script>
+</body>
+</html>

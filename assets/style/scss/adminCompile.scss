@@ -1,0 +1,24 @@
+@import './common/font.scss';
+@import './common/variable.scss';
+@import './common/reset.scss';
+@import './common/commonClass.scss';
+@import './common/icon.scss';
+@import './common/button.scss';
+@import './common/input.scss';
+@import './common/pageNation.scss';
+@import './common/popup.scss';
+@import './common/accodion.scss'; 
+@import './common/dotList.scss';
+@import './common/header.scss';
+@import './common/tab.scss';
+@import './common/ulTable.scss';
+@import './common/flexTable.scss';
+
+
+//page
+@import './adminPage/footer.scss';
+@import './adminPage/login.scss';
+@import './adminPage/main.scss';
+@import './adminPage/loginInfoPop.scss';
+@import './adminPage/reserveInfo.scss';
+@import './adminPage/error.scss';

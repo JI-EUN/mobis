@@ -1,0 +1,31 @@
+.main-content{
+    padding-left: 16px;
+    padding-right: 16px;
+    .tab-wrap{
+        margin-top: 24px;
+        margin-bottom: 40px;
+    }
+    h2{
+        font-size: $size-xl;
+        line-height: 28px;
+        margin-bottom: 24px;
+    }
+
+    .ul-table-wrap{
+        margin-top:24px;
+        .ul-table-header,
+        .ul-table-body li a{
+            grid-template-columns:1fr 1fr 1fr 0.7fr 0.5fr;
+        }
+        .ul-table-body{
+            li{
+                a{
+                    .btn{
+                        padding:4px 8px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

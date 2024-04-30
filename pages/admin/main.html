@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현대모비스 방문예약승인</title>
+    <link rel="stylesheet" href="/assets/style/css/adminStyle.css">
+    <script src="/assets/js/common.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="d-flex main-header">
+            <h1 class="d-flex">
+                <img src="/assets/svg/logo.svg" alt="현대모비스">
+                <b>방문예약 승인</b>
+            </h1>
+
+            <button class="log-out-btn popup-btn" data-id="popLogout">
+                <i class="icon icon-profile"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="page-content main-content">
+        <div class="tab-wrap d-flex">
+            <a href="main.html" class="active">방문예약 조회</a>
+            <a href="outList.html">전산장비 반출처리</a>
+        </div>
+        <div>
+            <h2>방문예약 조회</h2>
+            <div class="form-custom form-select">
+                <label for="state">결재상태</label>
+                <select name="" id="state">
+                    <option value="">전체</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                </select>
+            </div>
+            <div class="ul-table-wrap">
+                <ul class="ul-table-header">
+                    <li>방문자 소속</li>
+                    <li>방문자</li>
+                    <li>방문기간</li>
+                    <li>결재상태</li>
+                    <li>상세</li>
+                </ul>
+                <ul class="ul-table-body">
+                    <li>
+                        <a href="reserveInfoView.html" class="ul-tbody-row">
+                            <span>겟스마트</span>
+                            <span>배진아 외 2명</span>
+                            <span>2024.04.03 - 2024.04.30</span>
+                            <span>결재완료</span>
+                            <span><i class="btn gray-line-btn">상세</i></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="page-nation d-flex">
+            <li><a href="" class="text-ir"><span>이전</span></a></li>
+            <li><a href=""><span>1</span></a></li>
+            <li class="on"><a href=""><span>2</span></a></li>
+            <li><a href="" class="text-ir"><span>다음</span></a></li>
+        </ul>
+    </div>
+
+    
+
+    <div class="popup-wrap"></div> 
+
+    
+</body>
+</html>

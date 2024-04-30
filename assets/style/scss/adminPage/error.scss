@@ -1,0 +1,26 @@
+.error-cont{
+    background-color: #F6F8FC;
+    padding:24px;
+    >p{
+        text-align: center;
+        font-weight: 700;
+        font-size: $size-sm;
+        line-height: $size-xxl;
+    }
+    .img-wrap{
+        text-align: center;
+        margin:24px auto;
+        padding: 0 17px; 
+    }
+    >.d-flex{
+        max-width: 300px;
+        margin: 0 auto;
+        line-height: $size-md;
+        >div{
+            padding-left: 20px;
+            >span{
+                display: block;
+            }
+        }
+    }
+}

@@ -55,3 +55,21 @@ accodionBtns.forEach((accodionBtn) => {
     }
   });
 });
+
+
+//input date placeholder
+let customInputWraps = document.querySelectorAll('.custom-date-wrap');
+customInputWraps.forEach((customInputWrap)=>{
+  customInputWrap.addEventListener('click',function(){
+    let placeholder = this.querySelector('.date-placeholder');
+    let dateInput = this.querySelector('input');
+    placeholder.classList.add('hide');
+    dateInput.focus();
+    dateInput.showPicker();
+  })
+
+  customInputWrap.addEventListener("change", (e) => {
+    let test = e.value;
+    console.log(test)
+  });
+})

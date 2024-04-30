@@ -1,0 +1,153 @@
+//방문예약조회 결재정보
+.reserve-info-view{
+    padding-right: 16px;
+    padding-left: 16px;
+    form{
+        >div,>fieldset{
+            margin-top:40px
+        }
+        >div:first-child{
+            margin-top:0;
+            >h2{
+                margin-top: 24px;
+            }
+        }
+        .select-wrap{
+            margin:24px 0;
+            padding-bottom:24px;
+            border-bottom:1px solid $border-gray;
+            select{
+                margin-bottom:8px;
+                &:last-child{
+                    margin-bottom:0;
+                }
+            }
+        }
+    }
+    h2{
+        font-size: $size-sm;
+        line-height: $size-xxl;
+        margin-bottom: $size-sm;
+    }
+    .ul-table-wrap{
+        .ul-table-header,
+        .ul-table-body li .ul-tbody-row{
+            grid-template-columns:1fr 1.2fr 0.8fr 1fr 1fr;
+        }
+        .btn{
+            padding:4px 8px;
+            font-weight: 600;
+            font-size: 12px;
+        }
+        &.mt-24{
+            margin-top:24px;
+        }
+        &.reserve-info-table{
+            .ul-table-header,
+            .ul-table-body li .ul-tbody-row{
+                grid-template-columns:0.8fr 1.2fr  1.2fr 0.8fr 1fr;
+            }
+        }
+    }
+    .flex-table-wrap{
+        .upload-file-list{
+            display: flex;
+            flex-direction: column;
+            a{
+                line-height: $size-md;
+                display: inline-block;
+                margin-top:4px;
+                &:first-child{
+                    margin-top:0;
+                }
+            }
+        }
+    }
+    .btns-wrap{
+        padding-bottom: 24px;;
+    }
+}
+
+
+//반려사유 팝업
+.write-box-wrap{
+    text-align: left;
+    margin-top:24px;
+    border:1px solid $border-gray;
+    min-height: 168px;
+    max-height: 168px;
+    overflow-y: auto; 
+    textarea{
+        padding:16px;
+        border:none;
+        width: 100%;
+        min-height: 166px;
+        height: auto;
+    }
+    >div{
+        padding:16px;
+    }
+}
+
+//전산장비 반입.반출
+.admin-equip-detail{
+    form{
+        >div,>fieldset{
+            margin-top:40px;
+            &:first-child{
+                margin-top:0;
+            }
+        }
+        .sm-title{
+            font-weight: 600;
+            font-size: $size-sm;
+            line-height: $size-xxl;
+            margin-bottom:12px;
+        }
+
+        //케이스별 상단영역
+        .dt-field{
+            .befroe-in{
+                border-top:1px solid $border-gray;
+                padding-top:12px;
+            }
+            .input-wrap{
+                margin-top:12px;
+            }
+            .out-date{
+                margin-top:12px;
+                padding-bottom:12px;
+                border-bottom:1px solid $border-gray;
+                p{
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+    .ul-table-wrap{
+        .ul-table-header,
+        .ul-table-body li .ul-tbody-row{
+            align-items: center;
+            grid-template-columns:1fr 1fr 1fr 0.7fr ;
+        }
+        &.approval-table{
+            .ul-table-header,
+            .ul-table-body li .ul-tbody-row{
+                align-items: center;
+                grid-template-columns:1fr 1fr 1fr  1fr 0.7fr ;
+            }
+        }
+        .ul-table-header{
+            li{
+                text-align: center;
+            }
+        }
+        .ul-table-body{
+            input{
+                width: 60%;
+                height: 24px;
+                text-align: center;
+            }
+        }
+    }
+}

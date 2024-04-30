@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현대모비스 방문예약승인</title>
+    <link rel="stylesheet" href="/assets/style/css/adminStyle.css">
+    <script src="/assets/js/common.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="d-flex">
+            <a href="" class="back-btn"></a>
+            <h1 class="text-center">
+                <b>방문예약 결재정보</b>
+            </h1>
+        </div>
+    </header>
+    <div class="page-content reserve-info-view">
+        <form action="">
+            <div>
+                <h2>결재정보</h2>
+                <div class="ul-table-wrap reserve-info-table">
+                    <ul class="ul-table-header">
+                        <li>결재단계</li>
+                        <li>결재자</li>
+                        <li>대결재자</li>
+                        <li>결재상태</li>
+                        <li>결제일</li>
+                    </ul>
+                    <ul class="ul-table-body">
+                        <li>
+                            <div class="ul-tbody-row">
+                                <span>상신</span>
+                                <span>파워모듈생기팀 책임매니저 정기영</span>
+                                <span>-</span>
+                                <span>승인</span>
+                                <span>2024.04.03</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="">
+                <h2>피방문정보</h2>
+                <ul class="flex-table-wrap">
+                    <li>
+                        <b>피방문자</b>
+                        <div>파워모듈생기팀 책임매니저 정기영</div>
+                    </li>
+                    <li><b>사내번호</b><div>-</div></li>
+                    <li><b>접수일</b><div>2023.04.00</div></li>
+                </ul>
+            </div>
+            <fieldset class="">
+                <h2>방문정보</h2>
+                <ul class="flex-table-wrap">
+                    <li>
+                        <b>방문기간</b>
+                        <div>2024.04.03-2024.04.30</div>
+                    </li>
+                    <li><b>방문시간</b><div>10:00 -17:00</div></li>
+                    <li><b>방문목적</b><div>촬영</div></li>
+                </ul>
+                <div class="select-wrap">
+                    <div class="form-custom form-select">
+                        <label for="selct1">사업장 및 출입지역</label>
+                        <select name="" id="selct1" disabled>
+                            <option value="">본사</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">본사</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                        </select>
+                        <select name="">
+                            <option value="">본사</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                        </select>
+                        <select name="" >
+                            <option value="">본사</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="filebox">
+                    <!--등록 전-->
+                    <div class="file-list-box">
+                        <span>첨부파일을 등록해주세요.</span>
+                    </div>
+                    <!--//등록 전-->
+                    <!--등록 후-->
+                    <div class="file-list-box">
+                        <span class="file-name">파일명.pdf</span>
+                        <button class="red-color-font" type="button">삭제</button>
+                    </div>
+                    <!--//등록 후-->
+                    <label for="file" class="btn gray-line-btn">파일찾기</label> 
+                    <input type="file" id="file">
+                </div>
+            </fieldset>
+            <fieldset>
+                <h2>방문자정보</h2>
+                <ul class="flex-table-wrap">
+                    <li>
+                        <b>방문자소속</b>
+                        <div>겟스마트</div>
+                    </li>
+                    <li><b>신청일</b><div>2024.04.03</div></li>
+                </ul>
+
+                <div class="ul-table-wrap mt-24">
+                    <ul class="ul-table-header">
+                        <li>방문자</li>
+                        <li>방문승인</li>
+                        <li>반입승인</li>
+                        <li>반입상세</li>
+                        <li>차량상세</li>
+                    </ul>
+                    <ul class="ul-table-body">
+                        <li>
+                            <div class="ul-tbody-row">
+                                <span>배진아</span>
+                                <span>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </span>
+                                <span>-</span>
+                                <span>
+                                   -
+                                </span>
+                                <span>
+                                    아우디 <br/>
+                                    16가1230
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ul-tbody-row">
+                                <span>김민희</span>
+                                <span>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </span>
+                                <span>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </span>
+                                <span>
+                                    <button type="button" class="popup-btn btn gray-line-btn"  data-id="popDetail" >상세</button>
+                                </span>
+                                <span>
+                                    -
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+
+            <div class="d-flex btns-wrap">
+                <a href="main.html" class="btn gray-line-btn">목록</a>
+                <button type="button" class="btn gray-line-btn red-color-font popup-btn" data-id="popReject">반려</button>
+                <button class="btn main-bg-btn">승인</button>
+
+                <button type="button" class="btn gray-line-btn main-color-font popup-btn" data-id="popReject2">반려사유</button>
+            </div>
+        </form>
+        
+
+        
+        
+    </div>
+
+   
+    <div class="popup-wrap"></div>
+</body>
+</html>

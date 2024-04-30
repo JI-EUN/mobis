@@ -1,0 +1,33 @@
+.login-info-list{
+    padding-top:16px;
+   li{
+        padding:12px 16px;
+        border:1px solid $border-gray;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+        margin-top: 8px;
+        &:first-child{
+            margin-top:0;
+        };
+        i{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: $main-gray;
+            font-weight: 600;
+	        flex-shrink: 0;
+        }
+        b{
+            font-size: $size-xs;
+            line-height:$size-sm;
+	        flex-grow: 1;
+            text-align: center;
+            padding-left: 16px;;
+        }
+    }
+}
