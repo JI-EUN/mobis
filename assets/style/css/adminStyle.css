@@ -154,6 +154,10 @@ legend {
   color: #F57C00 !important;
 }
 
+.color-black-font {
+  color: #111111 !important;
+}
+
 .error-text {
   display: inline-block;
   color: #EE3E33;
@@ -1029,6 +1033,28 @@ footer a {
 }
 .reserve-info-view .btns-wrap {
   padding-bottom: 24px;
+}
+
+.file-notice-pop .dot-list li {
+  font-size: 14px !important;
+  line-height: 18px;
+}
+.file-notice-pop .dot-list li::before {
+  background-color: #111111;
+}
+.file-notice-pop > p.text-left {
+  text-align: left;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  margin-top: 10px;
+  padding-left: 17px;
+  position: relative;
+}
+.file-notice-pop > p.text-left::before {
+  content: "*";
+  position: absolute;
+  left: 4px;
+  top: 2px;
 }
 
 .write-box-wrap {
