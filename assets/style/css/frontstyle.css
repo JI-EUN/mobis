@@ -154,6 +154,10 @@ legend {
   color: #F57C00 !important;
 }
 
+.color-black-font {
+  color: #111111 !important;
+}
+
 .error-text {
   display: inline-block;
   color: #EE3E33;
@@ -271,6 +275,32 @@ legend {
   border: none;
   background: #1D40A3 url("/assets/svg/check-icon.svg") no-repeat 50%;
 }
+.input-custom-wrap input[type=radio] {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  padding: 0;
+  margin: -1px;
+}
+.input-custom-wrap input[type=radio] + label {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.input-custom-wrap input[type=radio] + label::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 1px solid #EEEEEE;
+}
+.input-custom-wrap input[type=radio]:checked + label::before {
+  border: none;
+  background: url("/assets/svg/radio-select.svg") no-repeat 50%;
+}
 
 .input-custom-wrap {
   position: relative;
@@ -371,6 +401,11 @@ input[type=date]:valid::before {
   width: 100%;
 }
 
+.filebox .filebox-title {
+  line-height: 18px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
 .filebox .file-list-box {
   display: flex;
   align-items: center;
@@ -1310,6 +1345,14 @@ footer .footer-links li a, footer .footer-links li button {
   margin-right: 8px;
 }
 
+.select-psrson-pop ul li {
+  padding: 24px 0;
+  border-bottom: 1px solid #EEEEEE;
+}
+.select-psrson-pop ul li label {
+  font-size: 16px;
+}
+
 .reserve-finish {
   padding: 0 16px;
   display: flex;
@@ -1490,4 +1533,4 @@ footer .footer-links li a, footer .footer-links li button {
   left: 0;
 }
 
-/*# sourceMappingURL=frontstyle.css.map */
+/*# sourceMappingURL=frontStyle.css.map */

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>현대모비스 방문자 예약시스템</title>
+    <link rel="stylesheet" href="/assets/style/css/frontstyle.css">
+</head>
+<body class="noScroll">
+    <header>
+        <div class="d-flex">
+            <a href="" class="back-btn"></a>
+            <h1 class="text-center">
+                <b>방문예약</b>
+            </h1>
+        
+        </div>
+    </header>
+    <div class="page-content reserve-agreement">
+        <div class="reserve-step">
+            <div>
+                <ol class="d-flex">
+                    <li class="on"><i><b>1</b></i><span>약관 동의</span></li>
+                    <li class="on"><i><b>2</b></i><span>정보 입력</span></li>
+                    <li><i><b>3</b></i><span>신청 완료</span></li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="reserve-write-form">
+            <form action="" class="">
+                <fieldset>
+                    <h2>피방문자 정보</h2>
+                    <div class="form-custom form-select">
+                        <label for="write1" class="must">방문회사</label>
+                        <select name="" id="write1">
+                            <option value="">현대모비스</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                        </select>
+                    </div>
+                    <div class="form-custom form-select">
+                        <label for="write2" class="must">방문장소</label>
+                        <div class="d-flex visit-place">
+                            <select name="" id="write2">
+                                <option value="">대구 · 울산사무실</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                            </select>
+                            <select name="" disabled>
+                                <option value="">장소선택</option>
+                            </select>
+                        </div>
+                    </div> 
+                    <!--오류일때-->
+                     <div class="form-custom form-select error">
+                        <label for="write3" class="must">피방문자</label>
+                        <input id="write3" type="text" placeholder="피방문자명을 입력해주세요.">
+                        <i class="error-text">피방문자명을 입력해주세요.</i>
+                    </div>
+                    <!--오류일때-->
+                    <div class="form-custom form-select">
+                        <label for="write4" class="must">방문부서</label>
+                        <input id="write4" type="text" placeholder="방문 부서명을 입력해주세요." disabled>
+                    </div>
+                    <div class="d-flex">
+                        <button class="btn gray-line-btn popup-btn" data-id="popSearch" type="button">확인</button>
+                    </div>
+
+                    <div class="search-find">
+                        <p>찾아갈분</p>
+                        <div class="d-flex">
+                            <b>오윤근 정보보안팀</b>
+                            <strong class="main-color-font">확인완료</strong>
+                        </div>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <h2>신청자 정보</h2>
+                    <div class="form-custom">
+                        <label for="write2-1" class="must">신청회사</label>
+                        <input id="write2-1" type="text" placeholder="회사명을 입력해주세요.">
+                    </div>
+                    <div class="form-custom form-select">
+                        <label for="write2-2" class="must">방문기간</label>
+                        <div class="d-flex date-select">
+                            <input type="date"  placeholder='시작일 선택'>
+                            <input type="date"  placeholder='시작일 선택'>
+                        </div>
+                    </div> 
+                    <div class="form-custom form-select">
+                        <label for="write2-3" class="must">방문시간</label>
+                        <div class="d-flex select-time">
+                            <div class="d-flex">
+                                <select name="" id="write2-3">
+                                    <option value="">00시</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">00분</option>
+                                </select>
+                            </div>
+                            <i class="text-ir">-</i>
+                            <div class="d-flex">
+                                <select name="" id="">
+                                    <option value="">00시</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">00분</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-custom form-select">
+                        <label for="write2-4" class="must">방문목적</label>
+                        <select name="" id="write2-4">
+                            <option value="">유지보수</option>
+                        </select>
+                    </div>
+                    <div class="form-custom form-select">
+                        <label for="write2-5" class="must">공사명</label>
+                        <select name="" id="write2-5">
+                            <option value="">기타</option>
+                        </select>
+                    </div>
+                    <div class="form-custom">
+                        <label for="write2-1" class="must">공사명 · 유지보수 · 기타</label>
+                        <input id="write2-1" type="text" placeholder=" 유지보수/ 기타 공사명을 입력해주세요.">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <h2>방문객 정보</h2>
+                    <div class="visiter-info">
+                         <div class="form-custom">
+                            <label for="write2-1" class="must">방문자명</label>
+                            <input id="write2-1" type="text" placeholder="방문자명을 입력해주세요.">
+                        </div>
+                        <div class="form-custom">
+                            <label for="write2-1" class="must">생년원일</label>
+                            <input id="write2-1" type="text" placeholder="EX&#41; 1990-10-10">
+                        </div>
+                        <div class="form-custom">
+                            <label for="write2-1" class="must">연락처</label>
+                            <div class="d-flex contact-box">
+                                <select name="" id="write2-4">
+                                    <option value="">010</option>
+                                </select>
+                                <input type="text">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="form-custom">
+                                <label for="write2-1" class="must">차량정보</label>
+                                <div class="input-custom-wrap">
+                                    <input id="write2-1" type="text" value="30가 1234" placeholder="차량정보를 등록하세요." disabled>
+                                    <button class="red-color-font" type="button">삭제</button>
+                                </div>
+                            <button class="btn gray-line-btn popup-btn" data-id="popCarInfo" type="button">등록</button>
+                        </div>
+                         <div class="form-custom">
+                                <label for="write2-1" class="must">반입정보자산 목록</label>
+                                <div class="input-custom-wrap">
+                                    <input id="write2-1" type="text"  value="노트북 (LG 15ZD960)" placeholder="반입정보자산을 등록하세요." disabled>
+                                    <button class="red-color-font" type="button">삭제</button>
+                                </div>
+                            <div class="input-custom-wrap">
+                                <input type="text"  value="태블릿 (15inch / BLACK)" placeholder="반입정보자산을 등록하세요." disabled>
+                                <button class="red-color-font" type="button">삭제</button>
+                            </div>
+                            <button class="btn gray-line-btn popup-btn"  data-id="popEquipment" type="button">등록</button>
+                        </div>
+                    </div>
+
+
+                    <div class="add-visitor-info">
+                        <h2>추가 방문객 정보 </h2>
+                        <div class="visiter-info">
+                            <div class="form-custom">
+                                <label for="write2-1" class="must">방문자명</label>
+                                <input id="write2-1" type="text" placeholder="방문자명을 입력해주세요.">
+                            </div>
+                            <div class="form-custom">
+                                <label for="write2-1" class="must">생년원일</label>
+                                <input id="write2-1" type="text" placeholder="EX&#41; 1990-10-10">
+                            </div>
+                            <div class="form-custom">
+                                <label for="write2-1" class="must">연락처</label>
+                                <div class="d-flex contact-box">
+                                    <select name="" id="write2-4">
+                                        <option value="">010</option>
+                                    </select>
+                                    <input type="text">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="form-custom">
+                                <label for="write2-1" class="must">차량정보</label>
+                                <input id="write2-1" type="text" placeholder="차량정보를 등록하세요." disabled>
+                                <button class="btn gray-line-btn popup-btn" data-id="popCarInfo" type="button">등록</button>
+                            </div>
+                            <div class="form-custom">
+                                <label for="write2-1" class="must">반입정보자산 목록</label>
+                                <input id="write2-1" type="text" placeholder="반입정보자산을 등록하세요." disabled>
+                                <button class="btn gray-line-btn popup-btn"  data-id="popEquipment" type="button">등록</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="add-btn btn"><i class="icon icon-addvisitor">추가아이콘</i>방문객 추가</button>
+                </fieldset>
+
+
+                <div class="d-flex btns-wrap">
+                    <button class="btn gray-line-btn">취소</button>
+                    <a href="reserve3.html" class="btn main-bg-btn">방문신청</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+   
+    <div class="popup-wrap active">
+        <div class="d-flex box-bottom">
+            <div class="popup-content-wrap">
+                <div class="popup-header d-flex">
+                    <p>피방문자 선택</p>
+                    <button class="btn popup-close" ><i class="icon close-icon">닫기</i></button>
+                </div>
+                <div class="popup-content select-psrson-pop">
+                    <ul class="">
+                        <li>
+                            <div class="input-custom-wrap">
+                                <input type="radio" id="radio1">
+                                <label for="radio1">1615093@mobis.com · 제동생산팀 · 이재현 </label>
+                           </div>
+                        </li>
+                        <li>
+                            <div class="input-custom-wrap">
+                                <input type="radio" id="radio2">
+                                <label for="radio2">1615093@mobis.com · 제동생산팀 · 이재현 </label>
+                           </div>
+                        </li>
+                        <li>
+                            <div class="input-custom-wrap">
+                                <input type="radio" id="radio3">
+                                <label for="radio3">1615093@mobis.com · 제동생산팀 · 이재현 </label>
+                           </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <ul class="d-flex footer-links">
+            <li><a href="/pages/user/notice.html">공지사항</a></li>
+            <li><a href="/pages/user/faq.html">FAQ</a></li>
+            <li><button class="popup-btn" data-id="popTerms">이용약관</button></li>
+            <li><button class="popup-btn" data-id="popPrivacy">개인정보처리방침</button></li>
+        </ul>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+

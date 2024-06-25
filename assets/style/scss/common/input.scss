@@ -29,6 +29,36 @@
             }
         }
     }
+    input[type="radio"]{
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        padding: 0;
+        margin: -1px;
+        & + label{
+            display: flex;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+            &::before{
+                content: "";
+                width: 24px;
+                height: 24px;
+                margin-right: 12px;
+                border-radius:50%;
+                box-sizing: border-box;
+                border:1px solid $border-gray;
+            }
+        }
+        &:checked{
+            & + label{
+                &::before{
+                    border:none;
+                    background: url('/assets/svg/radio-select.svg') no-repeat 50%;
+                }
+            }
+        }
+    }
 }
 
 //삭제버튼있는 input
