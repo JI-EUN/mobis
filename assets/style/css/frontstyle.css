@@ -1352,6 +1352,9 @@ footer .footer-links li a, footer .footer-links li button {
 .select-psrson-pop ul li label {
   font-size: 16px;
 }
+.select-psrson-pop ul li:last-child {
+  border-bottom: none;
+}
 
 .reserve-finish {
   padding: 0 16px;
